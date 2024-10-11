@@ -1,0 +1,54 @@
+{ config, lib, pkgs, ... }:
+{
+  environment.systemPackages = with pkgs; [
+    nwg-look
+    ngrok
+    foot
+    protonvpn-gui
+    flameshot
+    stdenv.cc.cc.lib
+    wayland
+    wayland.dev
+    libudev0-shim
+    hplip
+    pfetch
+    eww
+    cava
+    blueman
+    fastfetch
+    playerctl
+    ani-cli
+    verilog
+    logisim-evolution
+    droidcam
+    wineWowPackages.stable
+    android-tools
+    zellij
+    anbox
+    xorg.libX11
+    xorg.libXcursor
+    xorg.libXext
+    xorg.libXfixes
+    xorg.libXi
+    xorg.libXinerama
+    xorg.libXrandr
+    xorg.libXrender
+    bottles
+    gparted
+    jdk
+    obs-studio
+    chromium
+    wpsoffice
+    droidcam
+    winetricks
+    waydroid
+    mesa
+    gtk3
+    xdg-desktop-portal-gnome
+    xdg-desktop-portal-hyprland
+    pipewire
+    wireplumber
+    xwayland
+    niri
+  ];
+}
